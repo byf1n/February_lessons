@@ -14,6 +14,7 @@
 # приклад юзера {'id':1,'name':'Max', 'age':35,'status':False}
 
 users_list = []
+listik = []
 con = True
 while con == True:
     print('1) додававання нового юзера')
@@ -33,10 +34,10 @@ while con == True:
     elif num == 2:
         print(users_list)
     elif num == 3:
-        print('в разроботке...')
+        print(sorted(users_list, key=lambda item:item['age'], reverse=True))
     elif num == 4:
         delUser = int(input('which user: '))
-        print(f'delete user {delUser}')
+        del users_list[{delUser}]
     elif num == 5:
         print('change status')
     elif num == 6:
